@@ -31,7 +31,7 @@ zpl = img.to_zpl #=> "^FO0,0^GFA, ... ^FS"
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-#### [Changelog](CHANGELOG.MD)
+#### [Changelog](CHANGELOG.md)
 
 ### Copyright
 
