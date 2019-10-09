@@ -26,3 +26,15 @@ require 'img2zpl'
 img = Img2Zpl::Image.open('foo.jpg')
 zpl = img.to_zpl #=> "^FO0,0^GFA, ... ^FS"
 ```
+
+### Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+#### [Changelog](CHANGELOG.MD)
+
+### Copyright
+
+Copyright &copy; 2019, [Michael King]() and [Contributors](CHANGELOG.md).
+
+MIT License, see [LICENSE](https://github.com/mtking2/img2zpl/blob/master/LICENSE)
