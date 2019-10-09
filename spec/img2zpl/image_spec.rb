@@ -11,7 +11,7 @@ describe Img2Zpl::Image do
   end
 
   it 'zpl method returns a string' do
-    expect(subject.zpl).to be_kind_of String
+    expect(subject.to_zpl).to be_kind_of String
   end
 
 end

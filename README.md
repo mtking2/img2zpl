@@ -9,5 +9,5 @@ Ruby library to convert images to usable &amp; printable ZPL code
 
 ```ruby
 img = Img2Zpl::Image.open('foo.jpg')
-zpl = img.zpl #=> "^FO0,0^GFA, ... ^FS"
+zpl = img.to_zpl #=> "^FO0,0^GFA, ... ^FS"
 ```

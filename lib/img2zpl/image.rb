@@ -1,6 +1,6 @@
 class Img2Zpl::Image < MiniMagick::Image
 
-  def zpl(black_threshold: 0.5)
+  def to_zpl(black_threshold: 0.5)
     bytes_per_row = (width % 8).positive? ? (width / 8) + 1 : (width / 8)
     byte_count = bytes_per_row * height
     data, line, previous_line, byte = '', '', '', ''
