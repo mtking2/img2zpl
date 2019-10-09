@@ -35,6 +35,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ### Copyright
 
-Copyright &copy; 2019, [Michael King]() and [Contributors](CHANGELOG.md).
+Copyright &copy; 2019, [Michael King](https://twitter.com/_mtking2) and [Contributors](CHANGELOG.md).
 
 MIT License, see [LICENSE](https://github.com/mtking2/img2zpl/blob/master/LICENSE)
