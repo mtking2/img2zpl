@@ -14,6 +14,10 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'img2zpl'
+require 'byebug'
+require 'pry'
+require 'pry-nav'
+
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
