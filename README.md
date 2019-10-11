@@ -24,7 +24,7 @@ gem install img2zpl
 require 'img2zpl'
 
 img = Img2Zpl::Image.open('foo.jpg')
-zpl = img.to_zpl #=> "^FO0,0^GFA, ... ^FS"
+zpl = img.to_zpl #=> "^GFA, ... ^FS"
 ```
 
 ### Contributing
@@ -35,6 +35,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ### Copyright
 
-Copyright &copy; 2019, [Michael King](https://twitter.com/_mtking2) and [Contributors](CHANGELOG.md).
+&copy; 2019, [Michael King](https://twitter.com/_mtking2) and [Contributors](CHANGELOG.md).
 
 MIT License, see [LICENSE](https://github.com/mtking2/img2zpl/blob/master/LICENSE)
