@@ -12,7 +12,7 @@ bundle install
 Then check out a working branch:
 
 ```
-git checkout <my-working-branch>
+git checkout -b <my-working-branch>
 ```
 
 ### Write tests
@@ -30,13 +30,16 @@ Write your code to make your tests pass.
 
 Update the CHANGELOG with the description of your code changes and your name on the line after `"* Your contribution here"`.
 
-### Push your changes and open a pull request
+### Commit and push your changes
 
-Push you changes to your working branch.
+Commit and push your changes to your working branch.
 
 ```
+git commit -am 'Add some feature'
 git push origin <my-working-branch>
 ```
+
+### Open a pull request
 
 Open a pull request against upstream master and your working branch. Give a brief description of what your PR does and explain what the code changes do.
 
