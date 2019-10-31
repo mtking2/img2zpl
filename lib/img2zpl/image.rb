@@ -1,7 +1,7 @@
 module Img2Zpl
   class Image < MiniMagick::Image
 
-    def to_zpl(black_threshold: 0.5, compress: true)
+    def to_zpl(black_threshold: 0.5, invert: false, compress: true)
       bytes_per_row = (width % 8).positive? ? (width / 8) + 1 : (width / 8)
       byte_count = bytes_per_row * height
       data, line, previous_line, byte = '', '', '', ''
@@ -9,7 +9,8 @@ module Img2Zpl
       get_pixels.each do |row|
         row.each_with_index do |column, i|
           r, g, b = column.map(&:to_i)
-          byte << ((r + g + b) > (black_threshold * 765) ? '0' : '1')
+          b_dot, w_dot = invert ? %w(1 0) : %w(0 1)
+          byte << ((r + g + b) > (black_threshold * 765) ? b_dot : w_dot)
           if (i % 8).zero?
             line << byte.to_i(2).to_s(16).upcase.rjust(2, '0')
             byte = ''

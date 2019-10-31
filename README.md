@@ -27,6 +27,33 @@ img = Img2Zpl::Image.open('foo.jpg')
 zpl = img.to_zpl #=> "^GFA, ... ^FS"
 ```
 
+#### Using ImageMagick commands
+
+The `Img2Zpl::Image` class inherits from the `MiniMagick::Image` class provied by the [minimagick](https://github.com/minimagick/minimagick) gem. So you have the same control when it comes to modifying the image before converting to ZPL.
+
+**Example**:
+```ruby
+img = Img2Zpl::Image.open('foo.jpg')
+
+img.resize '100x100'
+img.trim
+
+zpl = img.to_zpl
+```
+
+#### Options
+
+When calling the `.to_zpl` method there a number of optional parameters you can pass to further customize the resulting image:
+
+- `black_threshold`: A value between 0 and 1 that sets the darkness threshold which determines how dark a pixel should be in order to become black in the resulting b/w image. Use larger value for a more saturated image and smaller value for a less saturated one. Default: `0.5`
+- `invert`: set to `true` to invert which pixels are set to black and which are set to white.
+- `compress`: set to `false` to not perform the ACSII compression in the resulting `^GF` string. For larger images the uncompressed string can become **very** long, so use caution.
+
+**Example**:
+```ruby
+zpl = img.to_zpl black_threshold: 0.65, invert: true
+```
+
 ### Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)

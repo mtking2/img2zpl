@@ -1,6 +1,10 @@
-### v0.x.x (next)
+### v1.0.x (next)
 
-* Your contribution here.
+* Your contribution here
+
+### v1.0.0 (2019/10/31)
+
+* [#4](https://github.com/mtking2/img2zpl/pull/4): Add ability to invert images - [@mtking2](https://github.com/mtking2).
 
 ### v0.1.3 (2019/10/16)
 
