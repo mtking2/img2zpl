@@ -11,8 +11,10 @@ module Img2Zpl
           r, g, b = column.map(&:to_i)
           b_dot, w_dot = invert ? %w(1 0) : %w(0 1)
           byte << ((r + g + b) > (black_threshold * 765) ? b_dot : w_dot)
-          if (i % 8).zero?
-            line << byte.to_i(2).to_s(16).upcase.rjust(2, '0')
+
+          if ((i+1) % 8).zero? || i == (width-1)
+            line_str = byte.ljust(8, '0').to_i(2).to_s(16).upcase.rjust(2, '0')
+            line << line_str
             byte = ''
           end
         end
@@ -56,7 +58,7 @@ module Img2Zpl
 
     def _compress(data)
       data.gsub!(/([\da-zA-Z])(\1+)/) do |m|
-        "#{_reduce(m.length)}#{$1}"
+        m.length == 2 ? m : "#{_reduce(m.length)}#{$1}"
       end
     end
 

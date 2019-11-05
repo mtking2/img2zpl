@@ -1,6 +1,6 @@
 # img2zpl
 
-[![gem](https://img.shields.io/gem/v/img2zpl)](https://rubygems.org/gems/img2zpl)
+[![gem](https://img.shields.io/gem/v/img2zpl?color=orange)](https://rubygems.org/gems/img2zpl)
 [![downloads](https://img.shields.io/gem/dt/img2zpl?color=brightgreen)](https://rubygems.org/gems/img2zpl)
 
 Ruby library to convert images to usable &amp; printable ZPL code
@@ -33,10 +33,11 @@ The `Img2Zpl::Image` class inherits from the `MiniMagick::Image` class provied b
 
 **Example**:
 ```ruby
-img = Img2Zpl::Image.open('foo.jpg')
+img = Img2Zpl::Image.open('foo.png')
 
-img.resize '100x100'
+img.flatten
 img.trim
+img.resize '100x100'
 
 zpl = img.to_zpl
 ```
