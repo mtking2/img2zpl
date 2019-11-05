@@ -58,7 +58,7 @@ module Img2Zpl
 
     def _compress(data)
       data.gsub!(/([\da-zA-Z])(\1+)/) do |m|
-        "#{_reduce(m.length)}#{$1}"
+        m.length == 2 ? m : "#{_reduce(m.length)}#{$1}"
       end
     end
 
