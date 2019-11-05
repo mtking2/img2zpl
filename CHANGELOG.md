@@ -1,4 +1,4 @@
-### v1.0.1 (next)
+### v1.0.2 (next)
 
 * Your contribution here
 
