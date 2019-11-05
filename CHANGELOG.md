@@ -1,6 +1,10 @@
-### v1.0.x (next)
+### v1.0.1 (next)
 
 * Your contribution here
+
+### v1.0.1 (2019/11/05)
+
+* [#5](https://github.com/mtking2/img2zpl/pull/5): Fix artifact bug & improve compression - [@mtking2](https://github.com/mtking2).
 
 ### v1.0.0 (2019/10/31)
 
