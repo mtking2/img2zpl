@@ -6,7 +6,7 @@
 git clone git@github.com:<your-username>/img2zpl.git
 cd img2zpl
 git remote add upstream git@github.com:mtking2/img2zpl.git
-bundle install
+bin/setup
 ```
 
 Then check out a working branch:
