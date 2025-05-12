@@ -1,0 +1,39 @@
+require:
+  - standard
+plugins:
+  - rubocop-rspec
+
+inherit_gem:
+  standard: config/base.yml
+
+AllCops:
+  NewCops: enable
+  StringLiteralsFrozenByDefault: false
+  Exclude:
+    - bin/**/*
+
+Layout/IndentationStyle:
+  EnforcedStyle: tabs
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+
+Layout/IndentationWidth:
+  Width: 1
+
+RSpec/ExampleLength:
+  Enabled: true
+  Max: 10
+
+RSpec/MultipleExpectations:
+  Enabled: true
+  Max: 3
+
+Style/NilComparison:
+  Enabled: false
