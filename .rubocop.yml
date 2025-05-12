@@ -2,6 +2,7 @@ require:
   - standard
 plugins:
   - rubocop-rspec
+  - rubocop-performance
 
 inherit_gem:
   standard: config/base.yml
