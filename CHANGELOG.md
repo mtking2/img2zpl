@@ -10,6 +10,7 @@
   * add a Github Actions workflow for linting/testing
   * fix string literal issue [#7](https://github.com/mtking2/img2zpl/issues/7)
     * use unary plus operator to unfreeze string per [rubocop-performance](https://docs.rubocop.org/rubocop-performance/cops_performance.html#performanceunfreezestring) recommendation
+* [#8](https://github.com/mtking2/img2zpl/pull/8): Loosen mini_magick dependency - [@harmdewit](https://github.com/harmdewit).
 
 ### v1.0.1 (2019/11/05)
 
