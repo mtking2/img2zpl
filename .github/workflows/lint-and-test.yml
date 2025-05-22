@@ -1,0 +1,42 @@
+name: "Lint and Test"
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+  merge_group:
+  workflow_dispatch:
+
+jobs:
+
+  rubocop:
+    name: Lint Ruby files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Run Rubocop
+        run: bin/rubocop --format simple --format github
+
+  rspec:
+    name: Run RSpec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Run tests
+        run: bin/rspec
