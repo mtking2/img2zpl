@@ -1,6 +1,15 @@
-### v1.0.2 (next)
+### v1.0.3 (next)
 
 * Your contribution here
+
+### v1.0.2 (2025/05/22)
+
+* [#9](https://github.com/mtking2/img2zpl/pull/9): Development updates and fixes - [@mtking2](https://github.com/mtking2).
+  * added rubocop and linted files
+  * added some more binstubs
+  * add a Github Actions workflow for linting/testing
+  * fix string literal issue [#7](https://github.com/mtking2/img2zpl/issues/7)
+    * use unary plus operator to unfreeze string per [rubocop-performance](https://docs.rubocop.org/rubocop-performance/cops_performance.html#performanceunfreezestring) recommendation
 
 ### v1.0.1 (2019/11/05)
 
