@@ -12,7 +12,11 @@ Gem::Specification.new do |spec|
 	spec.homepage = "https://github.com/mtking2/img2zpl"
 	spec.license = "MIT"
 
-	spec.files = `git ls-files`.split($/)
+	spec.files = `git ls-files lib`.split($/) + [
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "README.md"
+  ]
 	spec.require_paths = ["lib"]
 
 	spec.add_dependency "mini_magick", ">= 4.9"
