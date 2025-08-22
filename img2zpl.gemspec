@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
 	spec.files = `git ls-files lib`.split($/) + [
 		"CHANGELOG.md",
-		"LICENSE.txt",
+		"LICENSE",
 		"README.md"
 	]
 	spec.require_paths = ["lib"]
