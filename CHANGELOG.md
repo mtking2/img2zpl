@@ -1,6 +1,6 @@
 ### v1.0.3 (next)
 
-* Your contribution here
+[#11](https://github.com/mtking2/img2zpl/pull/11): Reduce gem size by excluding test files - [@yuri-zubov](https://github.com/yuri-zubov)
 
 ### v1.0.2 (2025/05/22)
 
