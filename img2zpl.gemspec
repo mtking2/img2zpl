@@ -13,10 +13,10 @@ Gem::Specification.new do |spec|
 	spec.license = "MIT"
 
 	spec.files = `git ls-files lib`.split($/) + [
-    "CHANGELOG.md",
-    "LICENSE.txt",
-    "README.md"
-  ]
+		"CHANGELOG.md",
+		"LICENSE.txt",
+		"README.md"
+	]
 	spec.require_paths = ["lib"]
 
 	spec.add_dependency "mini_magick", ">= 4.9"
