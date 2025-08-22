@@ -1,6 +1,11 @@
-### v1.0.3 (next)
+### v1.0.4 (next)
 
-[#11](https://github.com/mtking2/img2zpl/pull/11): Reduce gem size by excluding test files - [@yuri-zubov](https://github.com/yuri-zubov)
+* Your contribution here
+
+### v1.0.3 (2025/08/22)
+
+* [#11](https://github.com/mtking2/img2zpl/pull/11): Reduce gem size by excluding test files - [@yuri-zubov](https://github.com/yuri-zubov)
+* [#10](https://github.com/mtking2/img2zpl/pull/10): Fix line mutation - [@DmytroVasin](https://github.com/DmytroVasin)
 
 ### v1.0.2 (2025/05/22)
 
